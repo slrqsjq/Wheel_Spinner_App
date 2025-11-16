@@ -27,6 +27,5 @@
 ---
 
 ## 📱 应用界面预览
-> 
-![133f97afd1606a311581504eecb4688f.jpg](..%2F..%2F..%2F..%2Fxwechat_files%2Fwxid_y2mva28eccrc22_adc7%2Ftemp%2FRWTemp%2F2025-11%2F9e20f478899dc29eb19741386f9343c8%2F133f97afd1606a311581504eecb4688f.jpg)
-![ee018b8bb47e7e605d05e058ab56a411.jpg](..%2F..%2F..%2F..%2Fxwechat_files%2Fwxid_y2mva28eccrc22_adc7%2Ftemp%2FRWTemp%2F2025-11%2F9e20f478899dc29eb19741386f9343c8%2Fee018b8bb47e7e605d05e058ab56a411.jpg)
+> ![微信图片_20251116111915_129_71.jpg](image%2F%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251116111915_129_71.jpg)
+> ![微信图片_20251116111915_128_71.jpg](image%2F%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251116111915_128_71.jpg)
