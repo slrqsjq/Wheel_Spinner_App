@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light">
+
+    <!-- 主内容区域 - 使用ScrollView确保内容可见 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/title_spin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/spin_title"
+                style="@style/TitleTextStyle" />
+
+            <RelativeLayout
+                android:id="@+id/wheel_container"
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                android:layout_marginTop="32dp">
+
+                <com.example.wheel_spinner_app.WheelView
+                    android:id="@+id/wheel_view"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:id="@+id/pointer"
+                    android:layout_width="157dp"
+                    android:layout_height="319dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/pointer" />
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/btn_start_spin"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="24dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/start_spin_desc"
+                android:elevation="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dail_button" />
+
+            <TextView
+                android:id="@+id/text_start_spin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_spin"
+                style="@style/CuteTextStyle" />
+
+            <!-- 结果容器 - 确保在底部可见 -->
+            <LinearLayout
+                android:id="@+id/result_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/input_bg"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:visibility="gone"
+                android:elevation="8dp">
+
+                <TextView
+                    android:id="@+id/result_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="12dp"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp" />
+
+                <Button
+                    android:id="@+id/btn_complete"
+                    android:layout_width="140dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/complete_button"
+                    android:textSize="16sp"
+                    android:elevation="4dp"
+                    style="@style/PrimaryButtonStyle" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- 覆盖层 - 用于显示结果弹窗，防止误触关闭 -->
+    <FrameLayout
+        android:id="@+id/overlay_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:id="@+id/dialog_result_container"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/input_bg"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="12dp">
+
+            <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="🎉 恭喜中奖 🎉"
+                android:textSize="20sp"
+                android:textColor="@color/primary_color"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/dialog_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:fontFamily="sans-serif-light"
+                android:background="@color/background_card"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp"
+                android:lineSpacingExtra="4dp" />
+
+            <Button
+                android:id="@+id/btn_dialog_complete"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:text="@string/complete_button"
+                android:textSize="16sp"
+                android:elevation="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                style="@style/PrimaryButtonStyle" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 主色调 - 清新蓝色系 -->
+    <color name="primary_color">#FF4A90E2</color>
+    <color name="primary_dark">#FF3876C5</color>
+    <color name="accent_color">#FFFF6B9D</color>
+
+    <!-- 背景颜色 -->
+    <color name="background_light">#FFFAFBFC</color>
+    <color name="background_white">#FFFFFFFF</color>
+    <color name="background_card">#FFF8F9FA</color>
+
+    <!-- 转盘颜色 -->
+    <color name="wheel_color_1">#FFFF6B9D</color>
+    <color name="wheel_color_2">#FFC44569</color>
+    <color name="wheel_color_3">#FF4ECDC4</color>
+    <color name="wheel_color_4">#FF45B7D1</color>
+    <color name="wheel_color_5">#FF96CEB4</color>
+    <color name="wheel_color_6">#FFFECA57</color>
+    <color name="wheel_color_7">#FFFD79A8</color>
+    <color name="wheel_color_8">#FFE17055</color>
+    <color name="wheel_color_9">#FF74B9FF</color>
+    <color name="wheel_color_10">#FFA29BFE</color>
+    <color name="wheel_color_11">#FF6C5CE7</color>
+    <color name="wheel_color_12">#FFFF7675</color>
+
+    <!-- 文字颜色 -->
+    <color name="text_primary">#FF2C3E50</color>
+    <color name="text_secondary">#FF7F8C8D</color>
+    <color name="text_white">#FFFFFFFF</color>
+    <color name="text_hint">#FFBDC3C7</color>
+
+    <!-- 按钮颜色 -->
+    <color name="button_primary">#FF4A90E2</color>
+    <color name="button_primary_pressed">#FF3876C5</color>
+    <color name="button_complete">#FF00D2FF</color>
+    <color name="button_complete_pressed">#FF00B8E6</color>
+
+    <!-- 输入框颜色 -->
+    <color name="input_background">#FFF8F9FA</color>
+    <color name="input_border">#FFE1E8ED</color>
+    <color name="input_border_focused">#FF4A90E2</color>
+
+    <!-- 标签栏颜色 -->
+    <color name="tab_selected">#FF4A90E2</color>
+    <color name="tab_unselected">#FFBDC3C7</color>
+    <color name="tab_background">#FFFFFFFF</color>
+
+    <!-- 阴影和边框 -->
+    <color name="shadow_color">#1A000000</color>
+    <color name="divider_color">#FFE1E8ED</color>
+
+</resources>
+

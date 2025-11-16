@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- 默认禁止 cleartext -->
+    <base-config cleartextTrafficPermitted="false" />
+    <!-- 允许对本地或特定 IP 的明文访问 -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- 如果是 IP，要用 <domain includeSubdomains="true">115.120.228.204</domain> -->
+        <domain includeSubdomains="true">115.120.228.204</domain>
+    </domain-config>
+</network-security-config>
